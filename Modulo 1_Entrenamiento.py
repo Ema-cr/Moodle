@@ -33,7 +33,7 @@ if opcion == 1:
             cantidad_productos = int(input("Cuántos productos deseas?: "))  # Solicita cantidad de productos
             descuento = int(input("Ingresa el descuento deseado(%): "))  # Solicita el porcentaje de descuento
 
-            if descuento < 0 or descuento <= 100:  # Verifica si el descuento está en el rango adecuado (⚠ error lógico aquí)
+            if descuento < 0 or descuento <= 100:  # Verifica si el descuento está en el rango adecuado
                 porcentaje = precio_producto * descuento / 100  # Calcula la cantidad de descuento
                 precio_final = precio_producto - porcentaje  # Calcula el precio final con descuento
                 Total = precio_final * cantidad_productos  # Multiplica por la cantidad de productos
